@@ -133,5 +133,29 @@ iframe {
     grid-area: i;
 }
 
-
 /* CONTACT FORM */
+
+.reg-form-box {
+	display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.reg-form input, textarea{
+    display: flex;
+    flex-direction: column; 
+    width: 463px;
+    font-family: "Bold";
+    border: none;
+    background: none;
+    border-bottom: 2px solid gray;
+    margin-top: 41px;
+}
+
+.reg-form label {
+	font-family: 'Bold';
+	font-size: 16px;
+}
+.reg-form input:focus {
+	outline: none
+}
