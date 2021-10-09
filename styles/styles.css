@@ -45,9 +45,11 @@
 /* MIDDLE SECTION */
 
 .container {
-    max-width: 1400px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    transform: translateY(-172.56px);
+
 }
 
 .main-content {
@@ -62,22 +64,39 @@
     "e e e e e"
     ;
 }
+img {
+    max-width: 100%;
+}
+
+mid-banner img {
+    width: 600px;
+    height: 645px;
+    width: 100%;
+    height: auto;
+}
 
 .banner {
     grid-area: a;
-    width: 1000px;
     /* max-width: 80%;  ეს არ ვიცი ჯერ მინდა თუ არა */
 } 
 
 h1 {
     grid-area: b;
+    margin: 30px auto 60px 0;
 }
 
 .mid-banner {
     display: flex;
     grid-area: c;
+    max-width: 1024px;
     width: 100%;
+    
     justify-content: space-evenly;
+}
+.mid-banner img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .main-paragraphs {
@@ -86,14 +105,18 @@ h1 {
     max-height: 780px;
     height: 100%;
     font-family: 'Regular';
+    font-size: 16px;
 }
 
 .paragraph-one {
     grid-area: d;
+    margin-top: 60px;
+    margin-bottom: 18px;
 }
 
 .paragraph-two {
     grid-area: d;
+    margin-bottom: 18px;
 }
 
 .paragraph-three {
@@ -104,8 +127,21 @@ h1 {
     grid-area: e;
 }
 
-/* CONTACT BOX */
+button {
+    display: flex;
+    background-color: #0A22F4;
+    border-radius: 28px;
+    align-items: center;
+    margin: 58px auto 180px auto;
+    color: white;
+    font-family: 'Bold';
+    width: 341px;
+    height: 55px;
+    justify-content: center;
+}
 
+/* CONTACT-US */
+/* CONTAC-BOX */
 .contact-box {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -119,17 +155,23 @@ h1 {
 
 h4{
     grid-area: f;
+    font-family: 'Bold';
+    color: white;
+    font-size: 16px;
 }
 
 span{
     grid-area: g;
+    font-family: 'Regular';
+    color: white;
 }
 
 iframe {
     grid-area: h;
     width: 463px;
     height: 197px;
-
+    box-shadow: -10px 10px #ffffff;
+    border: none;
 }
 
 .telmail {
@@ -137,15 +179,13 @@ iframe {
 }
 
 /* CONTACT FORM */
-
+/* REG-FORM-BOX */
 .reg-form-box {
 	display: flex;
     flex-direction: column;
-    width: 500px;
 }
 
 .reg-form input, textarea{
-    display: flex;
     flex-direction: column; 
     width: 463px;
     font-family: "Bold";
@@ -163,9 +203,13 @@ iframe {
 	outline: none
 }
 
-/* 2 grid for 1  */
 .contact-us {
     display: grid;
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    background-color: #0A22F4;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: 
@@ -175,10 +219,12 @@ iframe {
 
 .contact-box {
     grid-area: l;
+    width: 50%;
 }
 
 .reg-form-box {
     grid-area: r;
+    width: 50%;
 }
 
 
