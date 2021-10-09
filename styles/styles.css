@@ -43,3 +43,95 @@
 }
 
 /* MIDDLE SECTION */
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "a a a a a"
+    "b b b b b"
+    "c c c c c"
+    "d d d d d"
+    "e e e e e"
+    /* "f f f f f" */
+    ;
+}
+
+.banner {
+    grid-area: a;
+    /* max-width: 80%;  ეს არ ვიცი ჯერ მინდა თუ არა */
+} 
+
+h1 {
+    grid-area: b;
+}
+
+.mid-banner {
+    grid-area: c;
+}
+
+.main-paragraphs {
+    max-width: 950px;
+    width: 100%;
+    max-height: 780px;
+    height: 100%;
+    font-family: 'Regular';
+}
+
+.paragraph-one {
+    grid-area: d;
+}
+
+.paragraph-two {
+    grid-area: d;
+}
+
+.paragraph-three {
+    grid-area: d;
+}
+
+.button {
+    grid-area: e;
+}
+
+/* CONTACT BOX */
+
+.contact-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: 
+    "f f f f f"
+    "g g g g g"
+    "h h h h h"
+    "i i i i i";
+}
+
+h4{
+    grid-area: f;
+}
+
+span{
+    grid-area: g;
+}
+
+iframe {
+    grid-area: h;
+    width: 463px;
+    height: 197px;
+
+}
+
+.telmail {
+    grid-area: i;
+}
+
+
+/* CONTACT FORM */
