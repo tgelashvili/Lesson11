@@ -158,6 +158,8 @@ iframe {
 .reg-form label {
 	font-family: 'Bold';
 	font-size: 16px;
+    color: white;
+
 }
 .reg-form input:focus {
 	outline: none
