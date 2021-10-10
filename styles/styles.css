@@ -145,6 +145,7 @@ button {
     display: grid;
     margin: 0 auto;
     max-width: 1024px;
+    width: 100%;
     justify-content: space-between;
     background-color:#0A22F4; 
     grid-template-columns: auto auto;
@@ -156,11 +157,16 @@ button {
 
 .contact-box {
     grid-area: l;
+    max-width: 500px;
+    width: 100%;
+    padding: 70px 0 70px 0;
 }
 
 .reg-form-box {
-    max-width: 600px;
     grid-area: r;
+    max-width: 500px;
+    width: 100%;
+    padding: 70px 0 70px 0;
 }
 
 .tel-icon {
@@ -168,13 +174,19 @@ button {
     width: 60px;
     background-color: white;
     border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .email-icon {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     background-color: white;
     border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tel .mail img {
@@ -201,6 +213,8 @@ h4{
     font-family: 'Bold';
     color: white;
     font-size: 16px;
+    padding: 0 auto 30 auto;
+    margin: 0;
 }
 
 span{
@@ -220,9 +234,10 @@ iframe {
 .telmail {
     grid-area: i;
     display: flex;
+    width: 550px;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* CONTACT FORM */
@@ -266,28 +281,36 @@ footer {
     color: white;
     background-color: #0A22F4;
     font-family: 'Bold';
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    /* width: 350px; */
-    /* align-items: center; */
-    /* top: 850px;
-    right: 0px; */
-    
+    height: 100px;
 }
 
 .flex{
     max-width: 1024px;
     display: flex;
+    height: 100%;
+    align-items: center;
+    border-top: 1px gray;
 }
 
-.rights .made-by div {
-    border-top: 1px gray;
+.made-by a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+}
+
+
+.rights div{
+    justify-content: flex-start;
+}
+
+.made-by div{
+    justify-content: flex-end;
 }
 
 .contact-container {
     transform: translateY(-172.56px);
     background-color: #0A22F4;
-    max-height: 1080px;
+    /* max-height: 1080px; */
 }
