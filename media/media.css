@@ -23,6 +23,11 @@ Responsive */
     .nav-bar {
         display: none;
     }
+    .mid-banner img {
+    width: 162px;
+    height: 90px
+    }
+
     .paragraph-two {
         display: none;
     }
