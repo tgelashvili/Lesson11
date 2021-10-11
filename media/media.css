@@ -1,0 +1,42 @@
+/* ********************************
+Responsive */
+@media (max-width: 1024px) {
+    .contact-container {
+        max-width: 1024px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* 
+@media (max-width: 860px) {
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+} */
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+    .paragraph-two {
+        display: none;
+    }
+.paragraph-three {
+    display: none;
+}
+
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    h4 {
+        text-align: center;
+    }
+}
+
+/* ver movaswari */

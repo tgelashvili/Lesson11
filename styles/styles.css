@@ -7,6 +7,7 @@
 .header-content {
     background-color: #0020F4;
     height: 387.56px;
+    width: 100%;
 }
 
 .header-container {
@@ -89,8 +90,8 @@ h1 {
 }
 
 .main-paragraphs {
-    max-width: 950px;
-    width: 100%;
+    /* max-width: 950px;
+    width: 100%; */
     max-height: 1000px;
     height: 100%;
     font-family: 'Regular';
@@ -132,13 +133,12 @@ button {
 .contact-container {
     transform: translateY(-172.56px);
     background-color: #0A22F4;
-    max-height: 1080px;
-    height: 100%;
 }
 
 .contact-us {
     display: grid;
     max-width: 1024px;
+    width: 100%;
     justify-content: space-between;
     background-color:#0A22F4; 
     grid-template-columns: auto auto;
@@ -149,24 +149,22 @@ button {
 
 .contact-box {
     grid-area: l;
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
-    padding-top: 250px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
-    "f f f f"
-    "g g g g"
-    "h h h h"
-    "i i i i";
+    "f f "
+    "g g"
+    "h h"
+    "i i";
 }
 
 .reg-form-box {
     grid-area: r;
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
-    padding-top: 310px;
 }
 
 .tel-icon {
@@ -201,7 +199,10 @@ h4{
     font-family: 'Bold';
     color: white;
     font-size: 16px;
-    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    max-width: 1024px;
+    width: 100%;
 }
 
 span{
@@ -232,8 +233,8 @@ iframe {
 /* REG-FORM-BOX */
 .reg-form input, textarea{
     flex-direction: column; 
-    width: 463px;
     font-family: "Bold";
+    width: 350px;
     border: none;
     background: none;
     border-bottom: 2px solid gray;
@@ -270,7 +271,10 @@ footer {
 
 .flex { 
     display: flex;
+    max-width: 1024px;
+    width: 100%;
     height: 100%;
+    justify-content: space-between;
     align-items: center;
     border-top: 1px gray;
 }
@@ -278,20 +282,6 @@ footer {
 .made-by a {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     text-decoration: none;
     color: white;
 }
-
-.rights {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.made-by {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* ********************************
-Responsive */
